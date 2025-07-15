@@ -23,11 +23,9 @@ const SplashPurchase: React.FC = () => {
             </span>{" "}
             <br />
             <span>
-              <b>June 24, 25, 26</b>
-            </span>{" "}
-            <br />
-            <span>
-              <b>July 10, 24</b>
+              <b>July 24</b>
+              <br />
+              <i>More dates to be posted by the end of July</i>
             </span>
             <br />
             <br />
