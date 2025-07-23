@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const MapEmbed: React.FC = () => (
-  <div className="relative w-full pb-[55%]">
+  <div className="relative w-full">
     <Image
       src={"./map.png"}
       alt="map location of Hilgard sales"
