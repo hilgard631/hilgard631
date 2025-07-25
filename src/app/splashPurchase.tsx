@@ -11,7 +11,8 @@ const SplashPurchase: React.FC = () => {
         <div className="w-full md:w-3/4 pb-4">
           <p className="pb-8 text-xl">
             All our wines are available exclusively for local pickup at the
-            address below. No&nbsp;shipping,&nbsp;no&nbsp;deliveries.
+            address below. No shipping, no deliveries. We are unable to offer
+            tastings of the wines.
           </p>
           <address
             className="not-italic text-lg border-l-4 border-primary ps-4"
@@ -28,12 +29,6 @@ const SplashPurchase: React.FC = () => {
           </address>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
-          <div>
-            <h2 className="text-xl font-bold mb-2">July</h2>
-            <ul className="list-inside space-y-1">
-              <li>Thursday, July 24th, 2pm – 4pm</li>
-            </ul>
-          </div>
           <div>
             <h2 className="text-xl font-bold mb-2">August</h2>
             <ul className="list-inside space-y-1">
