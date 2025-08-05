@@ -172,6 +172,7 @@ export default function WineGrid() {
               <h3 className="text-primary">{wine.type}</h3>
               <p>${wine.price.toFixed(2)}</p>
             </div>
+            <p className="text-sm mt-4 text-secondary-f">Learn More</p>
           </div>
         ))}
       </div>
