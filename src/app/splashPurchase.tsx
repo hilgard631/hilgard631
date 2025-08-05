@@ -10,23 +10,11 @@ const SplashPurchase: React.FC = () => {
       <div className="flex flex-col gap-5">
         <div className="w-full md:w-3/4 pb-4">
           <p className="pb-8 text-xl">
-            All our wines are available exclusively for local pickup at the
-            address below. No shipping, no deliveries. We are unable to offer
-            tastings of the wines.
+            All our wines are available exclusively for local pickup at the UC
+            Davis Teaching and Research Winery (631 Hilgard Ln, Davis CA). No
+            shipping, no deliveries. We are unable to offer tastings of the
+            wines.
           </p>
-          <address
-            className="not-italic text-lg border-l-4 border-primary ps-4"
-            itemScope
-            itemType="https://schema.org/PostalAddress"
-          >
-            <span itemProp="name">Teaching and Research Winery</span>
-            <br />
-            <span itemProp="streetAddress">631 Hilgard Rd</span>
-            <br />
-            <span itemProp="addressLocality">Davis</span>,{" "}
-            <span itemProp="addressRegion">CA</span>{" "}
-            <span itemProp="postalCode">95616</span>
-          </address>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
           <div>
