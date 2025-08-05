@@ -7,13 +7,13 @@ const MapEmbed: React.FC = () => (
         <p>
           To purchase wines, please enter the Teaching and Research Winery by
           way of the red arrow and star on the map below. If arriving by car,
-          please park in the indicated Visitor Parkin area.
+          please park in the indicated Visitor Parking area.
         </p>
       </div>
     </div>
     <a href="https://maps.app.goo.gl/aQiVtvngEpoAQVad6">
       <Image
-        src={"./map.png"}
+        src={"./mapsat.png"}
         alt="map location of Hilgard sales"
         width={400}
         height={400}
