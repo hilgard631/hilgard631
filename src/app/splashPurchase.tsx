@@ -16,7 +16,7 @@ const SplashPurchase: React.FC = () => {
             wines.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <h2 className="text-xl font-bold mb-2">August</h2>
             <ul className="list-inside space-y-1">
