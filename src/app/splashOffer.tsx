@@ -1,6 +1,5 @@
 "use client";
 
-import { desc } from "framer-motion/client";
 import Image from "next/image";
 import { useState } from "react";
 
