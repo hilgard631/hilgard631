@@ -188,7 +188,7 @@ export default function WineGrid() {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-1 right-1 text-2xl text-gray-500 hover:text-gray-700"
+              className="absolute rounded-full top-1 bg-primary bor right-1 text-2xl text-white hover:text-gray-700"
               onClick={() => setSelectedWine(null)}
             >
               <svg
@@ -211,7 +211,7 @@ export default function WineGrid() {
               alt={selectedWine.name}
               width={400}
               height={400}
-              className="object-cover w-full mb-4 rounded-lg"
+              className="w-54 lg:object-cover lg:w-full mb-4 rounded-lg"
             />
             <div className="flex justify-between mt-2">
               <p>{selectedWine.location}</p>
