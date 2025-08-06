@@ -105,7 +105,7 @@ const SplashOffer: React.FC = () => {
               alt={selectedWine.name}
               width={400}
               height={400}
-              className="w-32 md:w-64 mb-4 rounded-lg"
+              className="hidden md:block md:w-64 mb-4 rounded-lg"
             />
             <div className="flex justify-between mt-2">
               <p>{selectedWine.location}</p>
