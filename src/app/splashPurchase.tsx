@@ -8,7 +8,7 @@ const SplashPurchase: React.FC = () => {
       </h2>
 
       <div className="flex flex-col gap-5">
-        <div className="w-full md:w-3/4 pb-4">
+        <div className="w-full md:w-3/4 pb-1">
           <p className="pb-8 text-xl">
             All our wines are available exclusively for local pickup at the UC
             Davis Teaching and Research Winery (631 Hilgard Ln, Davis CA). No
