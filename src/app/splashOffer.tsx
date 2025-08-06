@@ -76,13 +76,13 @@ const SplashOffer: React.FC = () => {
           onClick={() => setSelectedWine(null)}
         >
           <div
-            className="bg-white rounded-xl max-w-xl w-full p-6 relative"
+            className="bg-white rounded-xl max-w-md md:max-w-lg w-full p-6 relative"
             onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal="true"
           >
             <button
-              className="absolute top-1 right-1 text-2xl text-gray-500 hover:text-gray-700"
+              className="absolute rounded-full top-1 bg-primary bor right-1 text-2xl text-white hover:text-white-700"
               onClick={() => setSelectedWine(null)}
             >
               <svg
@@ -105,7 +105,7 @@ const SplashOffer: React.FC = () => {
               alt={selectedWine.name}
               width={400}
               height={400}
-              className="w-65 mb-4 rounded-lg"
+              className="w-32 md:w-64 mb-4 rounded-lg"
             />
             <div className="flex justify-between mt-2">
               <p>{selectedWine.location}</p>

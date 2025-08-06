@@ -188,7 +188,7 @@ export default function WineGrid() {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute rounded-full top-1 bg-primary bor right-1 text-2xl text-white hover:text-gray-700"
+              className="absolute rounded-full top-1 bg-primary bor right-1 text-2xl text-white hover:text-white-700"
               onClick={() => setSelectedWine(null)}
             >
               <svg
