@@ -12,9 +12,9 @@ const splashWines = [
     image: "./productshots/vesauvignonblanc.jpg",
     alch: "100% Sauvignon Blanc | 13.8% ALC. BY VOL.",
     description:
-      "This vibrant and expressive Sauvignon Blanc captures the essence of Oakville with its dazzling aromatics and exceptional finesse. On the nose, a lively bouquet of guava, passion fruit, white peach, and orange peel leaps from the glass, accented by white stone fruit blossoms, honeysuckle, and a touch of lemongrass. Notes of clementine, pear, and green melon round out the aromatic profile with freshness and charm.",
+      "Our Sauvignon Blanc captures the essence of Oakville with aromatics and finesse. On the nose, there is a bouquet of guava, passion fruit, white peach, and orange peel, accented by white stone fruit blossoms, honeysuckle, and a touch of lemongrass. Notes of clementine, pear, and green melon round out the aromatic profile.",
     descriptiontwo:
-      "The palate is just as compelling broad, layered, and zesty. Waves of lemon zest, lime, kiwi, and honeydew melon flow across the tongue, supported by a soft lanolin texture and crisp acidity. Subtle minerality and accents of gooseberry and stone fruit add depth and complexity, while the finish is long, bright, and irresistibly tropical, with kiwi and guava lingering gracefully.",
+      "The palate is broad, layered, and zesty. Lemon zest, lime, kiwi, and honeydew melon are supported by a soft lanolin texture and crisp acidity. Subtle minerality and accents of gooseberry and stone fruit add depth and complexity, while the finish is long, bright, and tropical.",
   },
   {
     name: "Cabernet Sauvignon",
@@ -24,9 +24,9 @@ const splashWines = [
     image: "./productshots/vecabernetsauvignon.jpg",
     alch: "100% Cabernet Sauvignon | 14.5% ALC. BY VOL.",
     description:
-      "A bold, classic expression of Oakville, the 2020 Cabernet Sauvignon is powerful yet refined, with stunning depth and aromatic complexity. It opens with dark and compelling aromas of blackberry, black cherry, and boysenberry, interwoven with notes of fresh roses, cassis, vanilla, and black pepper. Hints of dark chocolate, tobacco, and baking spices enrich the bouquet, creating an inviting and layered nose.",
+      "A bold, classic expression of Oakville, the 2020 Cabernet Sauvignon is powerful yet refined, with depth and aromatic complexity. Aromas of blackberry, black cherry, and boysenberry are interwoven with notes of fresh roses, cassis, vanilla, and black pepper. Hints of dark chocolate, tobacco, and baking spices enrich and complete the bouquet.",
     descriptiontwo:
-      "On the palate, rich dark fruits take center stage, plum, black currant, and black raspberry; framed by silky, granular tannins. Notes of bittersweet chocolate, espresso, and anise unfold alongside soft mocha, toasted cedar, and warm clove, revealing the influence of 22 months in medium toast French oak. The finish is long and structured, with lingering spice, sweet leather, and a touch of oak that speaks to its age worthiness and balance.",
+      "On the palate, dark fruits take center stage: plum, black currant, and black raspberry framed by silky tannins. Notes of bittersweet chocolate, espresso, and anise unfold alongside mocha, toasted cedar, and clove, revealing the influence of 22 months in medium toast French oak barrels. The finish is long and structured, with lingering spice, leather, and a touch of oak that speaks to its age worthiness and balance.",
   },
 ];
 
