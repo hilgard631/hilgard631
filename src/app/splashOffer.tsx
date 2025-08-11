@@ -10,7 +10,7 @@ const splashWines = [
     location: "Oakville AVA, Napa Valley",
     price: 50.0,
     image: "./productshots/vesauvignonblanc.jpg",
-    alch: "100% Sauvignon Blanc | 13.8% ALC. BY VOL.",
+    alch: "85% Sauvignon Blanc. 11% Grüner Veltliner, 4% Pinot Blanc | 13.8% ALC. BY VOL.",
     description:
       "Our Sauvignon Blanc captures the essence of Oakville with aromatics and finesse. On the nose, there is a bouquet of guava, passion fruit, white peach, and orange peel, accented by white stone fruit blossoms, honeysuckle, and a touch of lemongrass. Notes of clementine, pear, and green melon round out the aromatic profile.",
     descriptiontwo:
@@ -22,7 +22,7 @@ const splashWines = [
     location: "Oakville AVA, Napa Valley",
     price: 125.0,
     image: "./productshots/vecabernetsauvignon.jpg",
-    alch: "100% Cabernet Sauvignon | 14.5% ALC. BY VOL.",
+    alch: "85% Cabernet Sauvignon, 8.5 % Cabernet Franc, 6 % Merlot, 0.5% Petite Sirah | 14.5% ALC. BY VOL.",
     description:
       "A bold, classic expression of Oakville, the 2020 Cabernet Sauvignon is powerful yet refined, with depth and aromatic complexity. Aromas of blackberry, black cherry, and boysenberry are interwoven with notes of fresh roses, cassis, vanilla, and black pepper. Hints of dark chocolate, tobacco, and baking spices enrich and complete the bouquet.",
     descriptiontwo:
