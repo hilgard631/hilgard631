@@ -99,9 +99,9 @@ const wines = [
     price: 40.0,
     location: "Napa County",
     image: "./productshots/afterglow-cab.jpg",
-    alch: "85% Albariño, 10% Grüner Veltliner, 5% Vermentino | 13.1% ALC. BY VOL.",
+    alch: "85% Cabernet Sauvignon, 11.25% Petite Sirah, 3.75% Syrah | 14.3% ALC. BY VOL.",
     description:
-      "Fresh, crisp, and easy-drinking. This Albariño opens with bright notes of stone fruit (apricots, white peach), balanced by lively acidity and a clean, refreshing finish. Best served chilled. Perfect for sunny afternoons or casual get-togethers. ",
+      "Aromatic and approachable. The nose offers rich notes of vanilla, dark chocolate, and cherry, while the palate stays lean and structured. Subtle oak introduces layers of smoke and caramel to the long, smooth finish. Enjoy now or let it age gracefully. Ideal for young consumers seeking a smooth introduction to Oakville Cabernet – without the high price tag.",
   },
   {
     name: "Afterglow",
@@ -110,9 +110,9 @@ const wines = [
     price: 30.0,
     location: "Yolo County",
     image: "./productshots/afterglow-alba.jpg",
-    alch: "85% Cabernet Sauvignon, 11.25% Petite Sirah, 3.75% Syrah | 14.3% ALC. BY VOL.",
+    alch: "85% Albariño, 10% Grüner Veltliner, 5% Vermentino | 13.1% ALC. BY VOL.",
     description:
-      "Aromatic and approachable. The nose offers rich notes of vanilla, dark chocolate, and cherry, while the palate stays lean and structured. Subtle oak introduces layers of smoke and caramel to the long, smooth finish. Enjoy now or let it age gracefully. Ideal for young consumers seeking a smooth introduction to Oakville Cabernet – without the high price tag.",
+      "Fresh, crisp, and easy-drinking. This Albariño opens with bright notes of stone fruit (apricots, white peach), balanced by lively acidity and a clean, refreshing finish. Best served chilled. Perfect for sunny afternoons or casual get-togethers. ",
   },
   {
     name: "Aba-ra",
