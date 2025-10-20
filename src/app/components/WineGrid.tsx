@@ -106,17 +106,20 @@ const wines = [
   {
     name: "Afterglow",
     type: "Albariño",
+    inventory: "low stock",
     year: 2023,
     price: 30.0,
     location: "Yolo County",
     image: "./productshots/afterglow-alba.jpg",
     alch: "85% Albariño, 10% Grüner Veltliner, 5% Vermentino | 13.1% ALC. BY VOL.",
+
     description:
       "Fresh, crisp, and easy-drinking. This Albariño opens with bright notes of stone fruit (apricots, white peach), balanced by lively acidity and a clean, refreshing finish. Best served chilled. Perfect for sunny afternoons or casual get-togethers. ",
   },
   {
     name: "Aba-ra",
     type: "Sauvignon Blanc",
+    inventory: "low stock",
     year: 2024,
     price: 30.0,
     location: "Oakville, Napa Valley",
@@ -172,7 +175,14 @@ export default function WineGrid() {
               <h3 className="text-primary">{wine.type}</h3>
               <p>${wine.price.toFixed(2)}</p>
             </div>
-            <p className="text-sm mt-4 text-secondary-f">Learn More</p>
+            <div className="flex justify-between items-end">
+              <p className="text-sm mt-4 text-secondary-f">Learn More</p>
+              {wine.inventory && (
+                <span className="text-xs bg-primary text-white font-semibold px-2 py-1 rounded-sm">
+                  {wine.inventory}
+                </span>
+              )}
+            </div>
           </div>
         ))}
       </div>
