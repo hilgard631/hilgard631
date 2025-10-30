@@ -100,6 +100,7 @@ const wines = [
     location: "Napa County",
     image: "./productshots/afterglow-cab.jpg",
     alch: "85% Cabernet Sauvignon, 11.25% Petite Sirah, 3.75% Syrah | 14.3% ALC. BY VOL.",
+    inventory: "SOLD OUT",
     description:
       "Aromatic and approachable. The nose offers rich notes of vanilla, dark chocolate, and cherry, while the palate stays lean and structured. Subtle oak introduces layers of smoke and caramel to the long, smooth finish. Enjoy now or let it age gracefully. Ideal for young consumers seeking a smooth introduction to Oakville Cabernet – without the high price tag.",
   },
