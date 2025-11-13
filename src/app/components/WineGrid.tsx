@@ -29,6 +29,7 @@ const wines = [
   {
     name: "Kosmo",
     type: "Petit Syrah",
+    inventory: "low stock",
     year: 2023,
     price: 40.0,
     location: "Yolo County",
@@ -62,6 +63,7 @@ const wines = [
   {
     name: "Kosmo",
     type: "Albariño",
+    inventory: "low stock",
     year: 2023,
     price: 30.0,
     location: "Yolo County",
@@ -95,6 +97,7 @@ const wines = [
   {
     name: "Afterglow",
     type: "Cabernet Sauvignon",
+    inventory: "low stock",
     year: 2023,
     price: 40.0,
     location: "Napa County",
@@ -131,6 +134,7 @@ const wines = [
   {
     name: "Aba-ra",
     type: "Red Wine",
+    inventory: "low stock",
     year: "non vintage",
     price: 40.0,
     location: "California",
