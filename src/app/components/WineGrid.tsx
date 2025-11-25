@@ -122,7 +122,7 @@ const wines = [
   {
     name: "Aba-ra",
     type: "Sauvignon Blanc",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     year: 2024,
     price: 30.0,
     location: "Oakville, Napa Valley",

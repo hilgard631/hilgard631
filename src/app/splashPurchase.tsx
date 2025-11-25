@@ -18,12 +18,6 @@ const SplashPurchase: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <h2 className="text-xl font-bold mb-2">November</h2>
-            <ul className="list-inside space-y-1">
-              <li>Tuesday, November 25, 11am – 1pm</li>
-            </ul>
-          </div>
-          <div>
             <h2 className="text-xl font-bold mb-2">December</h2>
             <ul className="list-inside space-y-1">
               <li>Thursday, December 11, 2:00-4:00 PM</li>
