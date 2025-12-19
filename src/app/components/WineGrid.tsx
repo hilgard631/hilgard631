@@ -19,7 +19,7 @@ const wines = [
   {
     name: "Ambrosia",
     type: "Cabernet Sauvignon",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     year: 2021,
     price: 40.0,
     location: "Oakville AVA, Napa Valley",
