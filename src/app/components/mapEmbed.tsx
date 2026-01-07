@@ -3,7 +3,7 @@ import Image from "next/image";
 const MapEmbed: React.FC = () => (
   <div className="relative w-full">
     <div className="flex flex-col mb-3">
-      <div className="w-full md:w-3/4 pb-4">
+      <div className="w-full md:w-3/4 pb-4 text-xl">
         <p>
           To purchase wines, please enter the Teaching and Research Winery by
           way of the red arrow and star on the map below. If arriving by car,

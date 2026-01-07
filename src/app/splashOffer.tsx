@@ -8,6 +8,7 @@ const splashWines = [
     name: "Sauvignon Blanc",
     year: 2024,
     location: "Oakville AVA, Napa Valley",
+    inventory: "low stock",
     price: 50.0,
     image: "./productshots/vesauvignonblanc.jpg",
     alch: "85% Sauvignon Blanc. 11% Grüner Veltliner, 4% Pinot Blanc | 13.8% ALC. BY VOL.",
@@ -65,6 +66,11 @@ const SplashOffer: React.FC = () => {
             </div>
             <h3 className="text-primary text-xl mt-2">{wine.name}</h3>
             <p>${wine.price.toFixed(2)}</p>
+            {wine.inventory && (
+              <span className="text-xs bg-primary text-white font-semibold px-2 py-1 rounded-sm">
+                {wine.inventory}
+              </span>
+            )}
           </div>
         ))}
       </div>

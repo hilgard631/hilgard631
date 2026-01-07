@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MapEmbed from "./components/mapEmbed";
 
 const SplashPurchase: React.FC = () => {
@@ -15,12 +16,47 @@ const SplashPurchase: React.FC = () => {
             shipping, no deliveries. We are unable to offer tastings of the
             wines.
           </p>
+          <p className="pb-4 text-xl">
+            If purchasing 6 or more bottles, pickup outside of sales hours can
+            be arranged. Please complete the{" "}
+            <Link
+              className="underline text-primary"
+              href="https://docs.google.com/forms/d/1_xbRfVVhoxrf1WhNJ2NGPMpRd4FnJlNKz2uYTGnDK9A/viewform?edit_requested=true"
+            >
+              contact form
+            </Link>{" "}
+            to make arrangements.
+          </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
           <div>
-            <h2 className="text-xl font-bold mb-2">January</h2>
+            <h2 className="text-lg font-bold mb-1">January</h2>
             <ul className="list-inside space-y-1">
               <li>Tuesday, January 20, 2:00-4:00 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold mb-1">February</h2>
+            <ul className="list-inside space-y-1">
+              <li>Thursday, February 19, 2-4 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold mb-1">March</h2>
+            <ul className="list-inside space-y-1">
+              <li>Thursday, March 19, 2-4 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold mb-1">April</h2>
+            <ul className="list-inside space-y-1">
+              <li>Friday, April 17, 2-4 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-lg font-bold mb-1">May</h2>
+            <ul className="list-inside space-y-1">
+              <li>Friday, May 15, 2-4 PM</li>
             </ul>
           </div>
         </div>
