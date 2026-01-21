@@ -8,7 +8,7 @@ const splashWines = [
     name: "Sauvignon Blanc",
     year: 2024,
     location: "Oakville AVA, Napa Valley",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     price: 50.0,
     image: "./productshots/vesauvignonblanc.jpg",
     alch: "85% Sauvignon Blanc. 11% Grüner Veltliner, 4% Pinot Blanc | 13.8% ALC. BY VOL.",

@@ -65,7 +65,7 @@ const wines = [
   {
     name: "Kosmo",
     type: "Albariño",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     year: 2023,
     price: 30.0,
     location: "Yolo County",
