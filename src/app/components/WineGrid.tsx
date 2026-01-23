@@ -88,7 +88,7 @@ const wines = [
   {
     name: "Meleagris",
     type: "Petite Sirah",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     year: 2024,
     price: 40.0,
     location: "Yolo County",
