@@ -39,7 +39,7 @@ const SplashAbout: React.FC = () => {
                 src={"./about_1.jpg"}
                 width={1600}
                 height={818}
-                alt={"Hands sort freshly harvested grapes"}
+                alt={"Hands inspecting grape clusters in a vat."}
               />
             </div>
             <p className="text-sm mt-1 opacity-75">

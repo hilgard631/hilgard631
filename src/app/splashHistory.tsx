@@ -51,7 +51,7 @@ const SplashHistory: React.FC = () => {
               width={1604}
               height={840}
               alt={
-                "Rows of grapevines in a vineyard stretching into the distance, with autumn-colored leaves and a mountainous landscape in the background under a clear sky. "
+                "A vineyard with rows of grapevines and mountainous background."
               }
             />
             <p className="text-sm mt-1 opacity-75">

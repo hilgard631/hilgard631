@@ -168,7 +168,7 @@ export default function WineGrid() {
           >
             <Image
               src={wine.image}
-              alt={wine.name}
+              alt={`${wine.name} ${wine.type} bottle on a barrel`}
               width={400}
               height={400}
               className="object-cover mb-2 w-full"
@@ -177,7 +177,7 @@ export default function WineGrid() {
               <p className="text-secondary-f text-sm">{wine.location}</p>
               <p className="text-secondary-f text-sm">{wine.year}</p>
             </div>
-            <h4 className="text-lg text-primary mt-3">{wine.name}</h4>
+            <h2 className="text-lg text-primary mt-3">{wine.name}</h2>
             <div className="flex justify-between">
               <h3 className="text-primary">{wine.type}</h3>
               <p>${wine.price.toFixed(2)}</p>

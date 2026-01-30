@@ -3,23 +3,11 @@ import NavItems from "./components/navItems";
 
 const SplashIntro: React.FC = () => {
   return (
-    <section id="intro" className="relative h-full-dvh overflow-hidden">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster="./grapesonvine.jpg"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source
-          src="https://ucdcdn.azureedge.net/public/media/olivesequence"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
+    <section
+      id="intro"
+      className="relative h-full-dvh overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/grapesonvine.jpg')" }}
+    >
       <div className="relative z-10 md:h-screen flex">
         <div
           id="shownav"
@@ -34,7 +22,8 @@ const SplashIntro: React.FC = () => {
             />
           </div>
 
-          <p className="text-xl italic mt-auto">From Vine to Vision</p>
+          <h1 className="text-xl italic mt-auto">From Vine to Vision</h1>
+
           <Image
             src="/hilgard631-light.svg"
             width={300}
@@ -42,6 +31,7 @@ const SplashIntro: React.FC = () => {
             className="mb-4"
             alt="Hilgard631 Logo"
           />
+
           <p className="text-base">
             With over 145 years of global leadership in grape and wine
             education, the UC Davis Department of Viticulture and Enology (V&E)
@@ -49,6 +39,7 @@ const SplashIntro: React.FC = () => {
             nonprofit makes it possible for us to share our wine with the public
             for the benefit of student scholarship.
           </p>
+
           <br />
           <NavItems />
         </div>
