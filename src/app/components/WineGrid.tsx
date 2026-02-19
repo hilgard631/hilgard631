@@ -7,7 +7,7 @@ const wines = [
   {
     name: "Arvoré",
     type: "Cabernet Sauvignon",
-    inventory: "low stock",
+    inventory: "SOLD OUT",
     year: 2023,
     price: 40.0,
     location: "Oakville AVA, Napa Valley",
@@ -44,6 +44,7 @@ const wines = [
     name: "Arvoré",
     type: "Sauvignon Blanc",
     year: 2023,
+    inventory: "SOLD OUT",
     price: 30.0,
     location: "Yolo County",
     image: "./productshots/arvore-sav.jpg",
@@ -77,6 +78,7 @@ const wines = [
   {
     name: "Meleagris",
     type: "Chardonnay",
+    inventory: "Low Stock",
     year: 2024,
     price: 30.0,
     location: "Yolo County",
