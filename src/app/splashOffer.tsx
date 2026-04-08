@@ -66,11 +66,11 @@ const SplashOffer: React.FC = () => {
             </div>
             <h3 className="text-primary text-xl mt-2">{wine.name}</h3>
             <p>${wine.price.toFixed(2)}</p>
-            {wine.inventory && (
+            {/* {wine.inventory && (
               <span className="text-xs bg-primary text-white font-semibold px-2 py-1 rounded-sm">
                 {wine.inventory}
               </span>
-            )}
+            )} */}
           </div>
         ))}
       </div>

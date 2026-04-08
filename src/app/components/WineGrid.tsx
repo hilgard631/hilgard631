@@ -186,11 +186,11 @@ export default function WineGrid() {
             </div>
             <div className="flex justify-between items-end">
               <p className="text-sm mt-4 text-secondary-f">Learn More</p>
-              {wine.inventory && (
+              {/* {wine.inventory && (
                 <span className="text-xs bg-primary text-white font-semibold px-2 py-1 rounded-sm">
                   {wine.inventory}
                 </span>
-              )}
+              )} */}
             </div>
           </div>
         ))}
