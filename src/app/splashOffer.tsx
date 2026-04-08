@@ -4,19 +4,19 @@ import Image from "next/image";
 import { useState } from "react";
 
 const splashWines = [
-  {
-    name: "Sauvignon Blanc",
-    year: 2024,
-    location: "Oakville AVA, Napa Valley",
-    inventory: "SOLD OUT",
-    price: 50.0,
-    image: "./productshots/vesauvignonblanc.jpg",
-    alch: "85% Sauvignon Blanc. 11% Grüner Veltliner, 4% Pinot Blanc | 13.8% ALC. BY VOL.",
-    description:
-      "Our Sauvignon Blanc captures the essence of Oakville with aromatics and finesse. On the nose, there is a bouquet of guava, passion fruit, white peach, and orange peel, accented by white stone fruit blossoms, honeysuckle, and a touch of lemongrass. Notes of clementine, pear, and green melon round out the aromatic profile.",
-    descriptiontwo:
-      "The palate is broad, layered, and zesty. Lemon zest, lime, kiwi, and honeydew melon are supported by a soft lanolin texture and crisp acidity. Subtle minerality and accents of gooseberry and stone fruit add depth and complexity, while the finish is long, bright, and tropical.",
-  },
+  // {
+  //   name: "Sauvignon Blanc",
+  //   year: 2024,
+  //   location: "Oakville AVA, Napa Valley",
+  //   inventory: "SOLD OUT",
+  //   price: 50.0,
+  //   image: "./productshots/vesauvignonblanc.jpg",
+  //   alch: "85% Sauvignon Blanc. 11% Grüner Veltliner, 4% Pinot Blanc | 13.8% ALC. BY VOL.",
+  //   description:
+  //     "Our Sauvignon Blanc captures the essence of Oakville with aromatics and finesse. On the nose, there is a bouquet of guava, passion fruit, white peach, and orange peel, accented by white stone fruit blossoms, honeysuckle, and a touch of lemongrass. Notes of clementine, pear, and green melon round out the aromatic profile.",
+  //   descriptiontwo:
+  //     "The palate is broad, layered, and zesty. Lemon zest, lime, kiwi, and honeydew melon are supported by a soft lanolin texture and crisp acidity. Subtle minerality and accents of gooseberry and stone fruit add depth and complexity, while the finish is long, bright, and tropical.",
+  // },
   {
     name: "Cabernet Sauvignon",
     year: 2020,
