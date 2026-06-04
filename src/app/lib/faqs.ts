@@ -81,9 +81,9 @@ export const HilgardFaqs: Faq[] = [
   },
   {
     id: 8,
-    question: "Are there any discounts?",
+    question: "Do you offer discounts?",
     answer:
-      "We do not offer discounts for multiple bottle purchases or for any other reason.",
+      "We offer a 10% discount to members of the public purchasing 6 or more bottles, and a 25% discount to UC Davis departments purchasing a minimum of one case.",
   },
   {
     id: 9,
@@ -98,9 +98,15 @@ export const HilgardFaqs: Faq[] = [
   },
   {
     id: 11,
-    question: "Can I place an order over the phone?",
+    question: "Can I preorder wine?",
     answer:
-      "Unfortunately, we cannot reserve wines in advance and operate on a first come - first served basis.",
+      "Want your wine packaged and ready for pickup? Submit your pre-order at least 24 hours before your selected Hilgard631 sales date. Please complete this form if you would like to reserve wine.",
+    sources: [
+      {
+        label: "Reserve Form",
+        url: "https://ucdavis.co1.qualtrics.com/jfe/form/SV_2o7HDT4tkX41Lvg",
+      },
+    ],
   },
   {
     id: 12,
