@@ -63,6 +63,7 @@ const wines = [
     name: "Flight Home",
     type: "Red Wine",
     year: 2024,
+    price: 40.0,
     location: "Oakville AVA, Napa Valley",
     image: "./productshots/flighthome-red.jpg",
     alch: "14.5% ABV | 63.5% Cabernet Sauvignon, 19% Merlot, 12.5% Cabernet Franc, 5% Petite Sirah",
