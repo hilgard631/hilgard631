@@ -4,151 +4,76 @@ import Image from "next/image";
 import { useState } from "react";
 
 const wines = [
-  // {
-  //   name: "Arvoré",
-  //   type: "Cabernet Sauvignon",
-  //   inventory: "SOLD OUT",
-  //   year: 2023,
-  //   price: 40.0,
-  //   location: "Oakville AVA, Napa Valley",
-  //   image: "./productshots/arvore-cab.jpg",
-  //   alch: "14% ALC. BY VOL.",
-  //   description:
-  //     "A medium-bodied wine with aromas of blueberry, cranberry, vanilla, toasted oak, bay leaf, and peppercorn. Fine-grained, satiny tannins bring moderate astringency, leading to a long finish with notes of maraschino cherry and spice.",
-  // },
-  // {
-  //   name: "Ambrosia",
-  //   type: "Cabernet Sauvignon",
-  //   inventory: "SOLD OUT",
-  //   year: 2021,
-  //   price: 40.0,
-  //   location: "Oakville AVA, Napa Valley",
-  //   image: "./productshots/ambrosia-cab.jpg",
-  //   alch: "14% ALC. BY VOL.",
-  //   description:
-  //     "A medium-bodied wine with aromas of blueberry, cranberry, vanilla, toasted oak, bay leaf, and peppercorn. Fine-grained, satiny tannins bring moderate astringency, leading to a long finish with notes of maraschino cherry and spice.",
-  // },
-  // {
-  //   name: "Kosmo",
-  //   type: "Petit Syrah",
-  //   inventory: "SOLD OUT",
-  //   year: 2023,
-  //   price: 40.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/kosmo-petit.jpg",
-  //   alch: "14% ALC. BY VOL.",
-  //   description:
-  //     "Mocha, chocolate, and vanilla blend with warm notes of cinnamon, nutmeg, and toasted pastry. Rich dark fruits and floral elements meet grippy tannins and fresh berry acidity. A juicy, velvety wine with a long finish of mocha and oak. ",
-  // },
-  // {
-  //   name: "Arvoré",
-  //   type: "Sauvignon Blanc",
-  //   year: 2023,
-  //   inventory: "SOLD OUT",
-  //   price: 30.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/arvore-sav.jpg",
-  //   alch: "14% ALC. BY VOL.",
-  //   description:
-  //     "This wine offers aromas of citrus, green apple, white flowers, tropical passion fruit, and pineapple. On the palate, it is refreshingly dry, crisp, and spritzy with a smooth, lingering finish.",
-  // },
   {
-    name: "Ambrosia",
-    type: "Chardonnay",
-    year: 2023,
+    name: "9 Lives",
+    type: "Sauvignon Blanc",
+    year: 2025,
+    price: 30.0,
+    location: "Oakville AVA, Napa Valley",
+    image: "./productshots/9lives-sb.jpg",
+    alch: "14.5% ABV | 90% Sauvignon Blanc, 10% Albariño",
+    description:
+      "Curious, lively, and impossible to ignore. 9 Lives Sauvignon Blanc captures the playful spirit of a cat on the prowl. Bright notes of tropical fruit, green apple, and a hint of citrus leap from the glass. Finishing bold and refreshing.",
+  },
+  {
+    name: "9 Lives",
+    type: "Petite Sirah",
+    year: 2025,
+    price: 40.0,
+    location: "Yolo County",
+    image: "./productshots/9lives-ps.jpg",
+    alch: "14.5% ABV | 96% Petite Sirah, 2% Cabernet Sauvignon, 1.2% Merlot, 0.8% Cabernet Franc",
+    description:
+      "Dark, smooth, and a little mysterious. 9 Lives Petite Sirah embodies the quiet confidence of a cat in the night. Rich layers of blackberry, plum, and spice unfold with a velvety depth, balanced by bold tannins and a lingering finish.",
+  },
+  {
+    name: "Dilly Dally",
+    type: "White Blend",
+    year: "non vintage",
     price: 30.0,
     location: "Yolo County",
-    image: "./productshots/ambrosia-chard.jpg",
-    alch: "13.6% ALC. BY VOL.",
+    image: "./productshots/dillydally-white.jpg",
+    alch: "14.1% ABV | 50% Torrontes Riojano, 25% Pinot Blanc, 25% Sauvignon Blanc",
     description:
-      "A delicate balance of white peach, night, blooming jasmine, and vanilla, with a subtle undertone of toasted sesame seeds wafting from the glass. The palate is bright, with an initial hint of life that broadens into a stonefruit and mineral-driven core, with classic Chardonnay density that draws out the finish for a mouthwatering and yet satisfying sip.",
+      "Sit back, relax, and dilly dally with our California White Blend! This aromatic wine was crafted from grapes sourced from the heart of Yolo County. This unique combination offers hints of stonefruit, bright citrus notes, delicate floral aromas, and a crisp finish. Enjoy chilled on a beautiful sunny day with light pasta or fresh seafood.",
   },
-  // {
-  //   name: "Kosmo",
-  //   type: "Albariño",
-  //   inventory: "SOLD OUT",
-  //   year: 2023,
-  //   price: 30.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/kosmo-albarino.jpg",
-  //   alch: "13.5% ALC. BY VOL.",
-  //   description:
-  //     "This wine opens with mouth-watering acidity and a bright bouquet of citrus, melon, and florals. Lush and expressive on the palate, like an orange creamsicle with hints of nectarine and coastal salinity.",
-  // },
-  // {
-  //   name: "Meleagris",
-  //   type: "Chardonnay",
-  //   inventory: "Low Stock",
-  //   year: 2024,
-  //   price: 30.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/meleagris-chard.jpg",
-  //   alch: "80% Chardonnay, 8% Vermentino, 5% Grüner Veltliner, 4% Verdelho, 3% Viognier | 13.6% ALC. BY VOL.",
-  //   description:
-  //     "Light straw in hue, this aromatic blend offers notes of fresh green apple, pear, honeysuckle, LEMON and citrus blossom. Bright, crisp acidity lifts up a creamy round body.",
-  // },
-  // {
-  //   name: "Meleagris",
-  //   type: "Petite Sirah",
-  //   inventory: "SOLD OUT",
-  //   year: 2024,
-  //   price: 40.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/meleagris-petit.jpg",
-  //   alch: "98% Petite Sirah, 2% Cabernet Sauvignon | 14% ALC. BY VOL.",
-  //   description:
-  //     "Deep ruby with purple edges. Bursting with vibrant blueberry and cranberry, accented by black tea, coriander, and pepper. Juicy acidity and velvety tannins provide texture and grip. Enjoy now or cellar for 5–10 years.",
-  // },
-  // {
-  //   name: "Afterglow",
-  //   type: "Cabernet Sauvignon",
-  //   inventory: "SOLD OUT",
-  //   year: 2023,
-  //   price: 40.0,
-  //   location: "Napa County",
-  //   image: "./productshots/afterglow-cab.jpg",
-  //   alch: "85% Cabernet Sauvignon, 11.25% Petite Sirah, 3.75% Syrah | 14.3% ALC. BY VOL.",
-  //   description:
-  //     "Aromatic and approachable. The nose offers rich notes of vanilla, dark chocolate, and cherry, while the palate stays lean and structured. Subtle oak introduces layers of smoke and caramel to the long, smooth finish. Enjoy now or let it age gracefully. Ideal for young consumers seeking a smooth introduction to Oakville Cabernet – without the high price tag.",
-  // },
-  // {
-  //   name: "Afterglow",
-  //   type: "Albariño",
-  //   inventory: "SOLD OUT",
-  //   year: 2023,
-  //   price: 30.0,
-  //   location: "Yolo County",
-  //   image: "./productshots/afterglow-alba.jpg",
-  //   alch: "85% Albariño, 10% Grüner Veltliner, 5% Vermentino | 13.1% ALC. BY VOL.",
-
-  //   description:
-  //     "Fresh, crisp, and easy-drinking. This Albariño opens with bright notes of stone fruit (apricots, white peach), balanced by lively acidity and a clean, refreshing finish. Best served chilled. Perfect for sunny afternoons or casual get-togethers. ",
-  // },
-  // {
-  //   name: "Aba-ra",
-  //   type: "Sauvignon Blanc",
-  //   inventory: "SOLD OUT",
-  //   year: 2024,
-  //   price: 30.0,
-  //   location: "Oakville, Napa Valley",
-  //   image: "./productshots/abara-white.jpg",
-  //   alch: "85% Sauvignon Blanc, 10% Grüner Veltliner, 5% Pinot Blanc | 13.5% ALC. BY VOL.",
-  //   description:
-  //     "Zesty and fruit-forward, with notes of lemon zest, pineapple, banana, and peach. A lively white inspired by carefree afternoons—fresh, juicy, and endlessly drinkable.",
-  // },
-  // {
-  //   name: "Aba-ra",
-  //   type: "Red Wine",
-  //   inventory: "SOLD OUT",
-  //   year: "non vintage",
-  //   price: 40.0,
-  //   location: "California",
-  //   image: "./productshots/abara-red.jpg",
-  //   alch: "60% Petite Sirah, 40% Cabernet Sauvignon | 14.2% ALC. BY VOL.",
-  //   description:
-  //     "Aromas of cranberry, violet, pomegranate, and vanilla oak lead into a fruit-forward palate. Approachable and bold, this wine balances lush berry tones with subtle spice.",
-  // },
+  {
+    name: "Dilly Dally",
+    type: "Cabernet Sauvignon",
+    year: "non vintage",
+    price: 40.0,
+    location: "Oakville AVA, Napa Valley",
+    image: "./productshots/dillydally-cab.jpg",
+    alch: "15% ABV | 75.3% Cabernet Sauvignon, 14.3% Petite Sirah, 4.1% Cabernet Franc, 6.3% Merlot",
+    description:
+      "Sit back, relax, and dilly dally in the Napa Valley with our bold and sophisticated Oakville Cabernet Sauvignon. This wine boasts notes of pomegranate, chocolate, and cranberry sauce, with structured tannins, and a rich, toasty finish. This wine is perfect for movie night on the couch or enjoyed at room temperature with aged cheeses, hearty meats, or dark chocolate.",
+  },
+  {
+    name: "Flight Home",
+    type: "Albariño",
+    year: 2025,
+    price: 30.0,
+    location: "Yolo County",
+    image: "./productshots/flighthome-alba.jpg",
+    alch: "14.4% ABV | 95% Albariño, 5% Pinot Blanc",
+    description:
+      "This Albariño is bright, refreshing, and easy to enjoy. Aromas of apricot, white peach, and delicate white flowers are complemented by notes of lemon and lime. The palate is crisp and balanced, with vibrant acidity carrying flavors of citrus and ripe stone fruit through a clean finish. A perfect wine for warm days, good company, and just about any occasion that calls for a cold glass of wine.",
+  },
+  {
+    name: "Flight Home",
+    type: "Red Wine",
+    year: 2024,
+    location: "Oakville AVA, Napa Valley",
+    image: "./productshots/flighthome-red.jpg",
+    alch: "14.5% ABV | 63.5% Cabernet Sauvignon, 19% Merlot, 12.5% Cabernet Franc, 5% Petite Sirah",
+    description:
+      "This red blend reflects its Oakville origins through aromas of dusty earth, dark and red fruits, and subtle graphite minerality. The palate is layered with blackberry, red plum, and black raspberry, supported by a savory undertone that adds complexity. Fine-grained tannins provide structure while maintaining an approachable texture, resulting in a wine that is both polished and balanced. A persistent finish carries notes of graphite and ripe fruit, underscored by freshness and lift. Approachable in its youth, the wine also possesses the structure and balance to reward further cellaring.",
+  },
 ];
+
+const formatWinePrice = (price?: number) =>
+  price === undefined ? "Price TBD" : `$${price.toFixed(2)}`;
+
 export default function WineGrid() {
   const [selectedWine, setSelectedWine] = useState<
     (typeof wines)[number] | null
@@ -170,7 +95,7 @@ export default function WineGrid() {
           >
             <Image
               src={wine.image}
-              alt={`${wine.name} ${wine.type} bottle on a barrel`}
+              alt={`${wine.name} ${wine.type} bottle`}
               width={400}
               height={400}
               className="object-cover mb-2 w-full"
@@ -182,7 +107,7 @@ export default function WineGrid() {
             <h2 className="text-lg text-primary mt-3">{wine.name}</h2>
             <div className="flex justify-between">
               <h3 className="text-primary">{wine.type}</h3>
-              <p>${wine.price.toFixed(2)}</p>
+              <p>{formatWinePrice(wine.price)}</p>
             </div>
             <div className="flex justify-between items-end">
               <p className="text-sm mt-4 text-secondary-f">Learn More</p>
@@ -199,16 +124,19 @@ export default function WineGrid() {
       {/* MODAL */}
       {selectedWine && (
         <div
-          className="fixed inset-0 disclaimer-fade z-50 flex justify-center items-center"
+          className="fixed inset-0 disclaimer-fade z-50 flex justify-center items-center px-4 py-8"
           onClick={() => setSelectedWine(null)}
         >
           <div
-            className="bg-white rounded-xl max-w-md w-full p-6 relative"
+            className="bg-white rounded-xl max-h-[88vh] max-w-4xl w-full overflow-y-auto p-6 md:p-8 relative"
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
           >
             <button
-              className="absolute rounded-full top-1 bg-primary bor right-1 text-2xl text-white hover:text-white-700"
+              className="absolute rounded-full top-3 bg-primary bor right-3 text-2xl text-white hover:text-white-700"
               onClick={() => setSelectedWine(null)}
+              aria-label="Close wine details"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -225,27 +153,32 @@ export default function WineGrid() {
                 />
               </svg>
             </button>
-            <Image
-              src={selectedWine.image}
-              alt={selectedWine.name}
-              width={400}
-              height={400}
-              className="w-54 lg:object-cover lg:w-full mb-4 rounded-lg"
-            />
-            <div className="flex justify-between mt-2">
-              <p>{selectedWine.location}</p>
-              <p>{selectedWine.year}</p>
+            <div className="md:grid md:grid-cols-[18rem_minmax(0,1fr)] md:gap-8 md:items-start">
+              <Image
+                src={selectedWine.image}
+                alt={selectedWine.name}
+                width={400}
+                height={400}
+                className="hidden md:block w-full rounded-lg object-cover"
+              />
+              <div className="flex h-full flex-col md:pr-8">
+                <div className="flex justify-between gap-4 mt-2 md:mt-0">
+                  <p>{selectedWine.location}</p>
+                  <p>{selectedWine.year}</p>
+                </div>
+                <h3 className="text-xl font-bold mt-4 text-primary">
+                  {selectedWine.name}
+                </h3>
+                <p className="text-secondary-f">{selectedWine.type}</p>
+                <p className="mt-4 text-secondary-f">{selectedWine.alch}</p>
+                <p className="mt-6 md:mt-auto md:pt-4 font-semibold text-right">
+                  {formatWinePrice(selectedWine.price)}
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-bold mt-4 text-primary">
-              {selectedWine.name}
-            </h3>
-            <p className="text-secondary-f">{selectedWine.type}</p>
-
-            <p className="text-secondary-f">{selectedWine.alch}</p>
-            <p className="mt-2 text-primary-f">{selectedWine.description}</p>
-            <p className="mt-4 font-semibold text-right">
-              ${selectedWine.price.toFixed(2)}
-            </p>
+            <div className="mt-6 md:mt-8">
+              <p className="text-primary-f">{selectedWine.description}</p>
+            </div>
           </div>
         </div>
       )}
