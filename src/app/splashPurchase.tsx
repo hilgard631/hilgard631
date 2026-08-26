@@ -17,15 +17,22 @@ const SplashPurchase: React.FC = () => {
             wines.
           </p>
           <p className="pb-4 text-xl">
-            If purchasing 6 or more bottles, pickup outside of sales hours can
-            be arranged. Please complete the{" "}
+            If purchasing 6 or more bottles, pickup outside of regular sales
+            hours may be arranged{" "}
+            <strong>during normal business hours, Monday–Friday.</strong>{" "}
+            We are unable to accommodate pickups after business hours, on
+            weekends, or on university holidays. Alternate pickup times are{" "}
+            <strong>
+              not guaranteed and will be scheduled based on staff availability
+            </strong>
+            . Please complete the{" "}
             <Link
               className="underline text-primary"
               href="https://docs.google.com/forms/d/1_xbRfVVhoxrf1WhNJ2NGPMpRd4FnJlNKz2uYTGnDK9A/viewform?edit_requested=true"
             >
               contact form
             </Link>{" "}
-            to make arrangements.
+            to request an alternate pickup time.
           </p>
           <p className="pb-4 text-xl">
             Wines can only be purchased using a valid credit or debit card with
@@ -34,12 +41,6 @@ const SplashPurchase: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
-          <div>
-            <h2 className="text-lg font-bold mb-1">August</h2>
-            <ul className="list-inside space-y-1">
-              <li>Friday, August 21, 12-2 PM</li>
-            </ul>
-          </div>
           <div>
             <h2 className="text-lg font-bold mb-1">September</h2>
             <ul className="list-inside space-y-1">
