@@ -62,6 +62,7 @@ const wines = [
   {
     name: "Flight Home",
     type: "Red Wine",
+    inventory: "Low Inventory",
     year: 2024,
     price: 40.0,
     location: "Oakville AVA, Napa Valley",
@@ -112,11 +113,11 @@ export default function WineGrid() {
             </div>
             <div className="flex justify-between items-end">
               <p className="text-sm mt-4 text-secondary-f">Learn More</p>
-              {/* {wine.inventory && (
+              {wine.inventory && (
                 <span className="text-xs bg-primary text-white font-semibold px-2 py-1 rounded-sm">
                   {wine.inventory}
                 </span>
-              )} */}
+              )}
             </div>
           </div>
         ))}
