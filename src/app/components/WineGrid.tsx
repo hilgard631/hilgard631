@@ -18,6 +18,7 @@ const wines = [
   {
     name: "9 Lives",
     type: "Petite Sirah",
+    inventory: "Low Inventory",
     year: 2025,
     price: 40.0,
     location: "Yolo County",
@@ -29,6 +30,7 @@ const wines = [
   {
     name: "Dilly Dally",
     type: "White Blend",
+    inventory: "Low Inventory",
     year: "non vintage",
     price: 30.0,
     location: "Yolo County",
@@ -62,7 +64,7 @@ const wines = [
   {
     name: "Flight Home",
     type: "Red Wine",
-    inventory: "Low Inventory",
+    inventory: "Sold Out",
     year: 2024,
     price: 40.0,
     location: "Oakville AVA, Napa Valley",
